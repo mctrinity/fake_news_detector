@@ -11,7 +11,7 @@
 
 ## Phase 2: Feature Engineering
 - Convert text data into numerical features.
-  - Use **TF-IDF (Term Frequency-Inverse Document Frequency)**.
+  - Use **TF-IDF (Term Frequency-Inverse Document Frequency)** with n-grams (`ngram_range=(1,2)`) for better context.
   - Experiment with **Word Embeddings (Word2Vec, BERT, etc.)** for deep learning models.
 - Extract additional features.
   - Sentiment analysis.
@@ -20,11 +20,12 @@
 ## Phase 3: Model Training
 - Split dataset into training and testing sets.
 - Choose an appropriate model:
-  - **Naïve Bayes / Passive Aggressive Classifier** (Baseline ML models).
+  - **Passive Aggressive Classifier** with **regularization (`C=0.5, max_iter=1000`)** to prevent overfitting.
   - **LSTM / BERT / RoBERTa** (For deep learning models).
 - Train the model and evaluate performance.
   - Use **accuracy, precision, recall, and F1-score** for evaluation.
   - Tune hyperparameters for better performance.
+  - Check for overfitting and balance dataset if needed.
 
 ## Phase 4: Model Deployment
 - Save trained model and vectorizer using `joblib`.
