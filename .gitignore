@@ -1,0 +1,54 @@
+# Ignore Python-related files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+env/
+*.venv
+
+# Ignore model and dataset files
+*.pkl
+*.joblib
+*.h5
+
+# Ignore dataset files
+*.csv
+*.json
+*.xlsx
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.tmp
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore deployment-related files
+streamlit_static/
+deployment/
+*.bak
+
+# Ignore environment variables
+.env
+.env.local
+.env.*
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+
+# Ignore cache files
+__pycache__/
+.cache/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
